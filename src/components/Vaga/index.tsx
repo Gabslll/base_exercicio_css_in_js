@@ -1,4 +1,6 @@
-import { Vaga1, VagaTitle, VagaLink } from './Vaga'
+import { Card, CardTitle } from './style'
+
+import { CardLink as StyledCardLink } from './style'
 
 type Props = {
   titulo: string
@@ -11,8 +13,8 @@ type Props = {
 }
 
 const Vaga = (props: Props) => (
-  <Vaga1>
-    <VagaTitle>{props.titulo}</VagaTitle>
+  <Card>
+    <CardTitle>{props.titulo}</CardTitle>
     <ul>
       <li>Localizacao: {props.localizacao}</li>
       <li>Senioridade: {props.nivel}</li>
@@ -22,8 +24,10 @@ const Vaga = (props: Props) => (
       </li>
       <li>Requisitos: {props.requisitos.join(', ')}</li>
     </ul>
-    <VagaLink href="#">Ver detalhes e candidatar-se</VagaLink>
-  </Vaga1>
+    <StyledCardLink fontSize={14} href="#">
+      Ver detalhes e candidatar-se
+    </StyledCardLink>
+  </Card>
 )
 
 export default Vaga

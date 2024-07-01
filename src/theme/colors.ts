@@ -4,8 +4,3 @@ const Colors = {
 }
 
 export default Colors
-
-export type Theme = {
-  corPrincipal: string
-  corSecundaria: string
-}

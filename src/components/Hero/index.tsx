@@ -1,9 +1,13 @@
-import { Form, FormDiv, Title } from './Hero'
+import { Form, FormDiv } from './style'
+
+import { Title as StyledTitle } from './style'
 
 const Hero = () => (
   <Form>
     <FormDiv>
-      <Title>As melhores vagas para tecnologia, design e artes visuais.</Title>
+      <StyledTitle fontSize={48}>
+        As melhores vagas para tecnologia, design e artes visuais.
+      </StyledTitle>
     </FormDiv>
   </Form>
 )

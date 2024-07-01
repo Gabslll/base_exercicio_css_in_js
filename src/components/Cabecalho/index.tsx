@@ -1,12 +1,13 @@
-import { Head } from './style'
+import { Head as StyledHead } from './style'
 
 export type Props = {
   children: string
+  fontSize?: number
 }
 
 const Cabecalho = () => (
   <header>
-    <Head>EBAC Jobs</Head>
+    <StyledHead fontSize={40}>EBAC Jobs</StyledHead>
   </header>
 )
 
